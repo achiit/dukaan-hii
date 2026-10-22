@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shree Krishna General Store | Navrangpura, Ahmedabad</title>
+<meta name="description" content="Shree Krishna General Store in Navrangpura, Ahmedabad. Fresh groceries, spices, snacks, dairy and household items at fair prices. Call or WhatsApp to order.">
+<meta name="theme-color" content="#2F5D50">
+<meta property="og:title" content="Shree Krishna General Store, Navrangpura">
+<meta property="og:description" content="Quality products, great service, every visit. Call or WhatsApp to order.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232F5D50'/%3E%3Ctext x='50' y='66' font-size='50' font-family='Georgia' font-weight='700' text-anchor='middle' fill='%23F4EDE0'%3ESK%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F4EDE0; --bg2:#E9DEC9; --ink:#1E2321; --green:#2F5D50; --accent:#C8322B; --mustard:#E0A526; --muted:#56605b;
+  --serif:'Fraunces',Georgia,serif; --sans:'Manrope',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);line-height:1.1;font-weight:700}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{width:min(1180px,92%);margin-inline:auto}
+section{padding:100px 0}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:999px;font-weight:800;text-decoration:none;border:2px solid var(--ink);font-size:1rem;cursor:pointer;font-family:var(--sans);background:transparent;color:var(--ink);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-wa{background:var(--green);color:var(--bg);border-color:var(--green)}
+.awning{display:block;width:100%;height:30px}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:2px solid var(--ink)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0;position:relative}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--serif);font-weight:900;font-size:1.15rem;line-height:1.05}
+.logo i{width:42px;height:42px;border-radius:12px;background:var(--green);color:var(--bg);display:grid;place-items:center;font-style:normal;font-size:1rem;flex:none}
+.logo small{display:block;font-family:var(--sans);font-size:.72rem;font-weight:600;color:var(--muted);margin-top:3px}
+nav ul{display:flex;gap:24px;list-style:none}
+nav a{text-decoration:none;font-weight:700;font-size:.95rem}
+nav a:hover{color:var(--accent)}
+.hdr-cta{display:flex;gap:8px}
+.hdr-cta .btn{padding:9px 16px;font-size:.9rem}
+.burger{display:none;background:none;border:2px solid var(--ink);border-radius:10px;width:44px;height:44px;cursor:pointer}
+.burger span{display:block;width:20px;height:2px;background:var(--ink);margin:4px auto}
+
+/* hero */
+.hero{padding:70px 0 130px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.hero h1{font-size:clamp(2.3rem,5.2vw,4.3rem);font-weight:900;letter-spacing:-.02em}
+.proof{margin:22px 0 32px;font-weight:700;color:var(--muted);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.stars{display:inline-flex;gap:2px}
+.stars svg{width:18px;height:18px;fill:var(--mustard)}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-visual{position:relative;min-height:470px}
+.hero-visual .main{position:absolute;right:0;top:0;width:82%;aspect-ratio:4/5;object-fit:cover;border-radius:220px 220px 24px 24px;border:3px solid var(--ink);background:var(--bg2)}
+.hero-visual .small{position:absolute;left:0;bottom:-34px;width:46%;aspect-ratio:1;object-fit:cover;border-radius:24px;border:3px solid var(--ink);background:var(--mustard);transform:rotate(-5deg)}
+.stamp{position:absolute;left:2%;top:6%;width:122px;height:122px;border-radius:50%;background:var(--mustard);border:3px solid var(--ink);display:grid;place-items:center;text-align:center;font-family:var(--serif);font-weight:900;font-size:.95rem;line-height:1.1;transform:rotate(-12deg);z-index:2;padding:10px}
+
+/* trust */
+.trust{background:var(--green);color:var(--bg);padding:0}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:50px 0}
+.trust b{font-family:var(--serif);font-size:clamp(2rem,4vw,3.1rem);display:block;line-height:1;color:var(--mustard)}
+.trust span{font-size:.95rem;font-weight:600}
+
+/* products (front/back cards) */
+.head{max-width:640px;margin-bottom:34px}
+.head h2{font-size:clamp(1.9rem,4vw,3rem)}
+.head p{color:var(--muted);margin-top:14px}
+.hint{font-weight:700;font-size:.9rem;color:var(--accent);margin-bottom:26px}
+.cards{display:grid;grid-template-columns:repeat(6,1fr);gap:24px}
+.flip{perspective:1200px;min-height:350px}
+.flip:nth-child(1),.flip:nth-child(2){grid-column:span 3}
+.flip:nth-child(3),.flip:nth-child(4),.flip:nth-child(5){grid-column:span 2}
+.flip:nth-child(6){grid-column:span 6;min-height:300px}
+.inner{position:relative;width:100%;height:100%;min-height:inherit;transition:transform .6s;transform-style:preserve-3d}
+.flip.on .inner{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border:2px solid var(--ink);border-radius:20px;padding:26px;display:flex;flex-direction:column;gap:12px;background:var(--bg);overflow:auto}
+.face.back{transform:rotateY(180deg);background:var(--ink);color:var(--bg)}
+.flip.on .front{visibility:hidden;transition:visibility 0s .3s}
+.flip:not(.on) .back{visibility:hidden;transition:visibility 0s .3s}
+.side{align-self:flex-start;font-size:.78rem;font-weight:800;padding:4px 12px;border-radius:999px;background:var(--mustard);color:var(--ink)}
+.face svg.ico{width:52px;height:52px}
+.face h3{font-size:1.45rem}
+.face p{color:var(--muted);font-size:.96rem}
+.back p{color:#d8d1c1}
+.back ul{list-style:none;display:grid;gap:6px;font-size:.95rem;color:#e6dfcf}
+.back li:before{content:"\2713\00a0";color:var(--mustard);font-weight:800}
+.price{font-family:var(--serif);font-weight:900;font-size:1.25rem;margin-top:auto}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.row .btn{padding:10px 16px;font-size:.88rem}
+.flipbtn{background:none;border:none;font:inherit;font-weight:800;font-size:.88rem;text-decoration:underline;cursor:pointer;color:inherit;padding:8px 4px}
+.back .btn-wa{background:var(--mustard);color:var(--ink);border-color:var(--mustard)}
+
+/* about */
+.about{background:var(--bg2)}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}
+.avatar{width:200px;height:200px;border-radius:50%;background:var(--accent);color:var(--bg);display:grid;place-items:center;font-family:var(--serif);font-size:4.2rem;font-weight:900;border:3px solid var(--ink);box-shadow:10px 10px 0 var(--ink)}
+.owner{margin-top:34px;font-weight:700}
+.owner small{display:block;color:var(--muted);font-weight:500}
+.about h2{font-size:clamp(1.9rem,4vw,2.9rem);margin-bottom:22px}
+.about p{margin-bottom:16px;color:#33403c;max-width:62ch}
+.diff{list-style:none;margin-top:26px;display:grid;grid-template-columns:1fr 1fr;gap:12px 24px}
+.diff li{display:flex;gap:10px;align-items:flex-start;font-weight:700;font-size:.95rem}
+.diff svg{width:20px;height:20px;flex:none;margin-top:3px;fill:var(--green)}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:150px;gap:14px}
+.gal figure{border-radius:16px;overflow:hidden;border:2px solid var(--ink);background:var(--bg2);position:relative}
+.gal img{width:100%;height:100%;object-fit:cover}
+.gal figure:nth-child(1){grid-column:span 3;grid-row:span 2}
+.gal figure:nth-child(2){grid-column:span 3}
+.gal figure:nth-child(3){grid-column:span 2}
+.gal figure:nth-child(4){grid-column:span 1}
+.gal figure:nth-child(5){grid-column:span 2;grid-row:span 2}
+.gal figure:nth-child(6){grid-column:span 2}
+.gal figure:nth-child(7){grid-column:span 2}
+.gal figcaption{position:absolute;left:10px;bottom:10px;background:var(--bg);font-size:.78rem;font-weight:800;padding:3px 10px;border-radius:999px;border:2px solid var(--ink)}
+
+/* reviews */
+.rev{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:24px;align-items:start}
+.rev blockquote{border:2px solid var(--ink);border-radius:20px;padding:28px;background:var(--bg)}
+.rev blockquote:nth-child(2){margin-top:40px;background:var(--mustard)}
+.rev blockquote:nth-child(3){margin-top:16px}
+.rev p{margin:14px 0 18px;font-weight:500}
+.rev cite{font-style:normal;font-weight:800;font-size:.95rem;display:block}
+.rev cite small{display:block;font-weight:600;color:var(--muted)}
+.rev blockquote:nth-child(2) cite small{color:#4a3a10}
+
+/* pricing */
+.pricing{background:var(--ink);color:var(--bg)}
+.pricing .head p{color:#c9c2b2}
+.plist{max-width:820px}
+.plist div{display:flex;align-items:baseline;gap:14px;padding:16px 0;border-bottom:2px dashed #55605b}
+.plist dt{font-weight:700}
+.plist dt small{display:block;font-weight:500;color:#b7b09f;font-size:.86rem}
+.plist dd{margin-left:auto;font-family:var(--serif);font-weight:900;font-size:1.15rem;color:var(--mustard);white-space:nowrap}
+.pnote{margin-top:22px;color:#b7b09f;font-size:.92rem}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px}
+.map{border:3px solid var(--ink);border-radius:20px;overflow:hidden;min-height:400px;background:var(--bg2)}
+.map iframe{width:100%;height:100%;min-height:400px;border:0}
+.contact h2{font-size:clamp(1.9rem,4vw,2.8rem)}
+.hours{display:grid;grid-template-columns:1fr 1fr;gap:8px 20px;margin:20px 0 28px;font-weight:600}
+.hours span:nth-child(even){text-align:right;color:var(--muted)}
+.methods{display:grid;gap:12px}
+.methods .btn{justify-content:flex-start}
+.addr{margin-bottom:6px;color:#33403c}
+
+/* footer */
+footer{background:var(--green);color:var(--bg);padding:0 0 30px}
+.foot-cta{padding:70px 0 50px;display:flex;gap:30px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.foot-cta h2{font-size:clamp(1.8rem,4vw,3rem);max-width:560px}
+.foot-cta .btn{background:var(--mustard);color:var(--ink);border-color:var(--mustard);font-size:1.15rem;padding:18px 32px}
+.foot-bot{border-top:1px solid #ffffff44;padding-top:26px;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;font-size:.92rem}
+.foot-bot ul{list-style:none;display:flex;gap:18px;flex-wrap:wrap}
+.foot-bot a{text-decoration:none;font-weight:600}
+.built{margin-top:22px;text-align:center;font-size:.78rem;opacity:.92}
+
+.bar{display:none}
+
+@media(max-width:1080px){
+  nav ul{gap:16px}
+  .rev{grid-template-columns:1fr 1fr}
+  .rev blockquote:nth-child(3){grid-column:span 2;margin-top:0}
+}
+@media(max-width:820px){
+  section{padding:80px 0}
+  .burger{display:block}
+  nav{position:absolute;left:-4%;right:-4%;top:calc(100% + 12px);background:var(--bg);border-bottom:2px solid var(--ink);display:none;padding:6px 4%}
+  nav.open{display:block}
+  nav ul{flex-direction:column;gap:0}
+  nav a{display:block;padding:14px 0;border-bottom:1px solid var(--bg2)}
+  .hdr-cta{display:none}
+  .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr;gap:50px}
+  .hero-visual{min-height:440px;margin-bottom:30px}
+  .trust .wrap{grid-template-columns:1fr 1fr}
+  .cards{grid-template-columns:1fr 1fr}
+  .flip:nth-child(n){grid-column:span 1}
+  .flip:nth-child(6){grid-column:span 2}
+  .flip{min-height:380px}
+  .gal{grid-template-columns:repeat(4,1fr);grid-auto-rows:120px}
+  .gal figure:nth-child(n){grid-column:span 2;grid-row:span 1}
+  .gal figure:nth-child(1){grid-row:span 2}
+  .rev{grid-template-columns:1fr}
+  .rev blockquote:nth-child(n){grid-column:auto;margin-top:0}
+  body{padding-bottom:70px}
+  .bar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:60;border-top:2px solid var(--ink);background:var(--bg)}
+  .bar a{padding:16px;text-align:center;font-weight:800;text-decoration:none;display:flex;justify-content:center;align-items:center;gap:8px}
+  .bar a:first-child{background:var(--mustard)}
+  .bar a:last-child{background:var(--green);color:var(--bg)}
+  .bar svg{width:20px;height:20px}
+}
+@media(max-width:520px){
+  body{font-size:16px}
+  .cards{grid-template-columns:1fr}
+  .flip:nth-child(n){grid-column:span 1}
+  .diff{grid-template-columns:1fr}
+  .hero{padding-top:40px}
+  .hero-visual{min-height:390px}
+  .stamp{width:98px;height:98px;font-size:.8rem}
+  .gal{grid-template-columns:repeat(2,1fr)}
+  .gal figure:nth-child(n){grid-column:span 1}
+  .gal figure:nth-child(1){grid-column:span 2}
+  .plist div{flex-wrap:wrap}
+  .logo small{display:none}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="star" viewBox="0 0 24 24"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.7 7.1L12 17.6l-6.3 3.7 1.7-7.1L2 9.5l7.1-.6z"/></symbol>
+    <symbol id="tick" viewBox="0 0 24 24"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></symbol>
+    <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 00-8.6 15L2 22l5.1-1.3A10 10 0 1012 2zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.2 1.4 2.5 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.6.3.1.2.1.8-.1 1.4z"/></symbol>
+    <symbol id="ph" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15 15 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1z"/></symbol>
+    <pattern id="scal" width="40" height="30" patternUnits="userSpaceOnUse">
+      <rect width="40" height="30" fill="#E0A526"/>
+      <rect width="20" height="30" fill="#C8322B"/>
+    </pattern>
+  </defs>
+</svg>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="Shree Krishna General Store home"><i>SK</i><span>Shree Krishna<br>General Store<small>Navrangpura, Ahmedabad</small></span></a>
+    <nav id="menu" aria-label="Main">
+      <ul>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#prices">Prices</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hdr-cta">
+      <a class="btn" href="tel:+919876543210"><svg><use href="#ph"/></svg>Call</a>
+      <a class="btn btn-wa" href="https://wa.me/919876543210?text=Hello%20Shree%20Krishna%20General%20Store%2C%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>WhatsApp</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Your neighbourhood store for fresh, honest groceries at fair prices.</h1>
+      <p class="proof"><span class="stars" aria-hidden="true"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span> Trusted by families across Navrangpura since 2004</p>
+      <div class="hero-ctas">
+        <a class="btn btn-wa" href="https://wa.me/919876543210?text=Hello%20Shree%20Krishna%20General%20Store%2C%20I%20would%20like%20to%20send%20my%20grocery%20list." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Send your list on WhatsApp</a>
+        <a class="btn" href="tel:+919876543210"><svg><use href="#ph"/></svg>Call the shop</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="stamp">Open<br>7 AM to<br>10 PM</div>
+      <img class="main" src="https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=800&auto=format&fit=crop" alt="Neatly stocked grocery shelves" onerror="this.style.visibility='hidden'">
+      <img class="small" src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&auto=format&fit=crop" alt="Fresh produce and groceries" loading="lazy" onerror="this.style.visibility='hidden'">
+    </div>
+  </div>
+</section>
+
+<svg class="awning" viewBox="0 0 1200 30" preserveAspectRatio="none" aria-hidden="true"><rect width="1200" height="30" fill="url(#scal)"/></svg>
+
+<div class="trust">
+  <div class="wrap">
+    <div><b>20+</b><span>years serving the lane</span></div>
+    <div><b>1,500+</b><span>items on our shelves</span></div>
+    <div><b>400+</b><span>families who order every week</span></div>
+    <div><b>30 min</b><span>free home delivery within 2 km</span></div>
+  </div>
+</div>
+
+<section id="products">
+  <div class="wrap">
+    <div class="head">
+      <h2>Everything for the kitchen and the home</h2>
+      <p>Each card has two sides. The front shows what we stock and the price. The back shows what is inside and lets you order.</p>
+    </div>
+    <p class="hint">Tap “See back” on any card to flip it.</p>
+    <div class="cards">
+
+      <article class="flip" id="c1">
+        <div class="inner">
+          <div class="face front">
+            <span class="side">Front</span>
+            <svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><path d="M12 22h40l-4 32H16z" fill="#E0A526" stroke="#1E2321" stroke-width="3" stroke-linejoin="round"/><path d="M10 22h44v-6H10z" fill="#C8322B" stroke="#1E2321" stroke-width="3" stroke-linejoin="round"/></svg>
+            <h3>Grains, Flour and Pulses</h3>
+            <p>Wheat flour, rice, dals and pulses, cleaned and packed fresh every week.</p>
+            <div class="price">from ₹42 / kg</div>
+            <div class="row"><a class="btn btn-wa" href="https://wa.me/919876543210?text=Hello%2C%20I%20want%20to%20order%20grains%2C%20flour%20and%20pulses.%20Please%20share%20today%27s%20rates." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Order</a><button class="flipbtn" type="button" aria-pressed="false">See back</button></div>
+          </div>
+          <div class="face back">
+            <span class="side">Back</span>
+            <h3>What is inside</h3>
+            <ul><li>Chakki atta, 5 kg and 10 kg bags</li><li>Basmati and everyday rice</li><li>Toor, moong, chana and masoor dal</li><li>Loose or packed, your choice</li></ul>
+            <div class="row"><a class="btn btn-wa" href="https://wa.me/919876543210?text=Hello%2C%20I%20want%20to%20order%20grains%2C%20flour%20and%20pulses.%20Please%20share%20today%27s%20rates." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Order</a><button class="flipbtn" type="button" aria-pressed="true">See front</button></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="flip" id="c2">
+        <div class="inner">
+          <div class="face front">
+            <span class="side">Front</span>
+            <svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="34" r="20" fill="#C8322B" stroke="#1E2321" stroke-width="3"/><circle cx="32" cy="34" r="8" fill="#E0A526" stroke="#1E2321" stroke-width="3"/><path d="M26 10h12l-2 8H28z" fill="#2F5D50" stroke="#1E2321" stroke-width="3" stroke-linejoin="round"/></svg>
+            <h3>Spices and Masalas</h3>
+            <p>Whole and ground spices with a strong aroma, packed in small batches.</p>
+            <div class="price">from ₹30 / 100 g</div>
+            <div class="row"><a class="btn btn-wa" href="https://wa.me/919876543210?text=Hello%2C%20I%20want%20to%20order%20spices%20and%20masalas.%20Please%20share%20the%20rates." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Order</a><button class="flipbtn" type="button" aria-pressed="false">See back</button></div>
+          </div>
+          <div class="face back">
+            <span class="side">Back</span>
+            <h3>What is inside</h3>
+            <ul><li>Haldi, mirchi and dhania powder</li><li>Jeera, rai, ajwain and methi</li><li>Garam masala and sabji masala</li><li>Ground fresh on request</li></ul>
+            <div class="row"><a class="btn btn-wa" href="https://wa.me/919876543210?text=Hello%2C%20I%20want%20to%20order%20spices%20and%20masalas.%20Please%20share%20the%20rates." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Order</a><button class="flipbtn" type="button" aria-pressed="true">See front</button></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="flip" id="c3">
+        <div class="inner">
+          <div class="face front">
+            <span class="side">Front</span>
+            <svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><rect x="14" y="10" width="36" height="46" rx="6" fill="#E0A526" stroke="#1E2321" stroke-width="3"/><path d="M14 24h36M14 40h36" stroke="#C8322B" stroke-width="5"/></svg>
+            <h3>Snacks and Farsan</h3>
+            <p>Gujarati farsan, namkeen and biscuits for tea time.</p>
+            <div class="price">from ₹20</div>
+            <div class="row"><a class="btn btn-wa" href="https://wa.me/919876543210?text=Hello%2C%20I%20want%20to%20order%20snacks%20and%20farsan." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Order</a><button class="flipbtn" type="button" aria-pressed="false">See back</button></div>
+          </div>
+          <div class="face back">
+            <span class="side">Back</span>
+            <h3>What is inside</h3>
+            <ul><li>Fafda, gathiya and sev</li><li>Khakhra in many flavours</li><li>Biscuits and rusk</li><li>Gift packs for festivals</li></ul>
+            <div class="row"><a class="btn btn-wa" href="https://wa.me/919876543210?text=Hello%2C%20I%20want%20to%20order%20snacks%20and%20farsan." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Order</a><button class="flipbtn" type="button" aria-pressed="true">See front</button></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="flip" id="c4">
+        <div class="inner">
+          <div class="face front">
+            <span class="side">Front</span>
+            <svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><path d="M22 8h20v10l8 10v28H14V28l8-10z" fill="#F4EDE0" stroke="#1E2321" stroke-width="3" stroke-linejoin="round"/><path d="M14 38h36v18H14z" fill="#2F5D50" stroke="#1E2321" stroke-width="3"/></svg>
+            <h3>Dairy and Daily Needs</h3>
+            <p>Milk, curd, paneer, butter and ghee, kept cold in our fridge.</p>
+            <div class="price">Milk ₹56 / litre</div>
+            <div class="row"><a class="btn btn-wa" href="https://wa.me/919876543210?text=Hello%2C%20I%20want%20to%20order%20dairy%20items." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Order</a><button class="flipbtn" type="button" aria-pressed="false">See back</button></div>
+          </div>
+          <div class="face back">
+            <span class="side">Back</span>
+            <h3>What is inside</h3>
+            <ul><li>Packed milk and fresh curd</li><li>Paneer and cheese</li><li>Butter and desi ghee</li><li>Eggs and bread</li></ul>
+            <div class="row"><a class="btn btn-wa" href="https://wa.me/919876543210?text=Hello%2C%20I%20want%20to%20order%20dairy%20items." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Order</a><button class="flipbtn" type="button" aria-pressed="true">See front</button></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="flip" id="c5">
+        <div class="inner">
+          <div class="face front">
+            <span class="side">Front</span>
+            <svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><path d="M20 20h24l4 36H16z" fill="#2F5D50" stroke="#1E2321" stroke-width="3" stroke-linejoin="round"/><path d="M26 20V10h12v10" fill="none" stroke="#1E2321" stroke-width="3"/><circle cx="32" cy="38" r="7" fill="#E0A526" stroke="#1E2321" stroke-width="3"/></svg>
+            <h3>Household and Cleaning</h3>
+            <p>Detergent, dishwash, phenyl and everything for a clean home.</p>
+            <div class="price">from ₹25</div>
+            <div class="row"><a class="btn btn-wa" href="https://wa.me/919876543210?text=Hello%2C%20I%20want%20to%20order%20household%20and%20cleaning%20items." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Order</a><button class="flipbtn" type="button" aria-pressed="false">See back</button></div>
+          </div>
+          <div class="face back">
+            <span class="side">Back</span>
+            <h3>What is inside</h3>
+            <ul><li>Washing powder and liquid</li><li>Dishwash bars and gels</li><li>Floor and toilet cleaners</li><li>Brooms, mops and sponges</li></ul>
+            <div class="row"><a class="btn btn-wa" href="https://wa.me/919876543210?text=Hello%2C%20I%20want%20to%20order%20household%20and%20cleaning%20items." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Order</a><button class="flipbtn" type="button" aria-pressed="true">See front</button></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="flip" id="c6">
+        <div class="inner">
+          <div class="face front">
+            <span class="side">Front</span>
+            <svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><rect x="8" y="22" width="48" height="30" rx="4" fill="#C8322B" stroke="#1E2321" stroke-width="3"/><path d="M8 34h48M32 22v30" stroke="#E0A526" stroke-width="5"/><path d="M32 22c-8-12-18-6-12 0M32 22c8-12 18-6 12 0" fill="none" stroke="#1E2321" stroke-width="3"/></svg>
+            <h3>Monthly Grocery Kit</h3>
+            <p>One basket with your full month of rations, packed and delivered to your door.</p>
+            <div class="price">from ₹2,400 per month</div>
+            <div class="row"><a class="btn btn-wa" href="https://wa.me/919876543210?text=Hello%2C%20I%20am%20interested%20in%20the%20Monthly%20Grocery%20Kit.%20Please%20share%20the%20details." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Order</a><button class="flipbtn" type="button" aria-pressed="false">See back</button></div>
+          </div>
+          <div class="face back">
+            <span class="side">Back</span>
+            <h3>What is inside</h3>
+            <ul><li>Flour, rice, dal, oil and sugar</li><li>Tea, salt and a set of masalas</li><li>Cleaning basics for the month</li><li>Change anything on WhatsApp before we pack</li></ul>
+            <div class="row"><a class="btn btn-wa" href="https://wa.me/919876543210?text=Hello%2C%20I%20am%20interested%20in%20the%20Monthly%20Grocery%20Kit.%20Please%20share%20the%20details." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Order</a><button class="flipbtn" type="button" aria-pressed="true">See front</button></div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<svg class="awning" viewBox="0 0 1200 30" preserveAspectRatio="none" aria-hidden="true"><rect width="1200" height="30" fill="url(#scal)"/></svg>
+
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div>
+      <div class="avatar" aria-hidden="true">RP</div>
+      <p class="owner">Ramesh Patel<small>Owner, Shree Krishna General Store</small></p>
+    </div>
+    <div>
+      <h2>A small shop run on a big promise: no one leaves unhappy.</h2>
+      <p>My father, Krishnakant Patel, opened this shop in 2004 with two shelves and one weighing scale. I used to sit on a stool by the counter after school and learn every customer’s name, and what their family liked to eat.</p>
+      <p>Twenty years later, I still weigh the first kilo of the day myself. The faces have grown up, but the promise is the same as my father’s. Fair weight, fair price, and a smile when you walk in.</p>
+      <p>If something is not right, tell me. I will fix it before you reach home.</p>
+      <ul class="diff">
+        <li><svg aria-hidden="true"><use href="#tick"/></svg>Honest weight, every time</li>
+        <li><svg aria-hidden="true"><use href="#tick"/></svg>Free home delivery within 2 km</li>
+        <li><svg aria-hidden="true"><use href="#tick"/></svg>Monthly khata for regular families</li>
+        <li><svg aria-hidden="true"><use href="#tick"/></svg>Stock checked daily for freshness</li>
+        <li><svg aria-hidden="true"><use href="#tick"/></svg>Easy returns if you are not happy</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="head"><h2>A look inside the shop</h2></div>
+    <div class="gal">
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=800&auto=format&fit=crop" alt="Grocery shelves stocked with daily essentials" onerror="this.style.display='none'"><figcaption>Our shelves</figcaption></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=800&auto=format&fit=crop" alt="Fresh vegetables on display" onerror="this.style.display='none'"><figcaption>Fresh vegetables</figcaption></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=800&auto=format&fit=crop" alt="A neat grocery aisle" onerror="this.style.display='none'"></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1472141521881-95d0e87e2e39?w=800&auto=format&fit=crop" alt="Colourful produce" onerror="this.style.display='none'"></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=800&auto=format&fit=crop" alt="Sacks of rice and grains" onerror="this.style.display='none'"><figcaption>Rice and grains</figcaption></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1550989460-0adf9ea622e2?w=800&auto=format&fit=crop" alt="Grocery store interior" onerror="this.style.display='none'"></figure>
+      <figure><img loading="lazy" src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&auto=format&fit=crop" alt="Fresh groceries in baskets" onerror="this.style.display='none'"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="head"><h2>What the neighbourhood says</h2></div>
+    <div class="rev">
+      <blockquote>
+        <span class="stars" aria-label="5 out of 5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span>
+        <p>Sent my list on WhatsApp at 6 pm and the boy was at my door before the dal had even finished soaking. Rates are exactly what Ramesh bhai says, no surprises.</p>
+        <cite>Hetal Shah<small>Navrangpura</small></cite>
+      </blockquote>
+      <blockquote>
+        <span class="stars" aria-label="5 out of 5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span>
+        <p>The monthly kit saved me every first week. Atta is always fresh, and they swapped the oil brand when I asked.</p>
+        <cite>Jignesh Desai<small>Ellisbridge</small></cite>
+      </blockquote>
+      <blockquote>
+        <span class="stars" aria-label="5 out of 5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span>
+        <p>I have been buying masala here for 12 years. Nothing in the market matches that smell.</p>
+        <cite>Sunita Mehta<small>Paldi</small></cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="prices">
+  <div class="wrap">
+    <div class="head">
+      <h2>Clear prices, no hidden charges</h2>
+      <p>Our most-asked rates. Prices follow the market, so message us for today’s exact rate.</p>
+    </div>
+    <dl class="plist">
+      <div><dt>Chakki atta<small>per kg</small></dt><dd>₹42</dd></div>
+      <div><dt>Basmati rice<small>per kg</small></dt><dd>₹95</dd></div>
+      <div><dt>Toor dal<small>per kg</small></dt><dd>₹160</dd></div>
+      <div><dt>Haldi powder<small>per 100 g</small></dt><dd>₹30</dd></div>
+      <div><dt>Packed milk<small>per litre</small></dt><dd>₹56</dd></div>
+      <div><dt>Monthly Grocery Kit<small>free delivery included</small></dt><dd>from ₹2,400</dd></div>
+    </dl>
+    <p class="pnote">Free home delivery on orders above ₹300 within 2 km.</p>
+    <p style="margin-top:26px"><a class="btn btn-wa" href="https://wa.me/919876543210?text=Hello%2C%20please%20share%20today%27s%20full%20price%20list." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Get today’s full price list</a></p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="map">
+      <iframe title="Map showing Shree Krishna General Store in Navrangpura, Ahmedabad" src="https://maps.google.com/maps?q=Navrangpura%2C%20Ahmedabad%2C%20Gujarat%20380009&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div>
+      <h2>Come by or message us</h2>
+      <p class="addr" style="margin-top:14px">12, Shree Complex, Navrangpura,<br>Ahmedabad, Gujarat 380009</p>
+      <div class="hours">
+        <span>Monday to Saturday</span><span>7:00 AM to 10:00 PM</span>
+        <span>Sunday</span><span>8:00 AM to 8:00 PM</span>
+      </div>
+      <div class="methods">
+        <a class="btn btn-wa" href="https://wa.me/919876543210?text=Hello%20Shree%20Krishna%20General%20Store%2C%20I%20have%20a%20question." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>WhatsApp: +91 98765 43210</a>
+        <a class="btn" href="tel:+919876543210"><svg><use href="#ph"/></svg>Call: +91 98765 43210</a>
+        <a class="btn" href="mailto:hello@shreekrishnastore.in">Email: hello@shreekrishnastore.in</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-cta">
+      <h2>Quality products, great service, every visit.</h2>
+      <a class="btn" href="https://wa.me/919876543210?text=Hello%20Shree%20Krishna%20General%20Store%2C%20I%20would%20like%20to%20order." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Order on WhatsApp</a>
+    </div>
+    <div class="foot-bot">
+      <div><strong>Shree Krishna General Store</strong><br>Navrangpura, Ahmedabad</div>
+      <ul>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#prices">Prices</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div>&copy; <span id="yr">2026</span> Shree Krishna General Store</div>
+    </div>
+    <p class="built">built with ❤️ by 21.coders</p>
+  </div>
+</footer>
+
+<div class="bar">
+  <a href="tel:+919876543210"><svg><use href="#ph"/></svg>Call</a>
+  <a href="https://wa.me/919876543210?text=Hello%20Shree%20Krishna%20General%20Store%2C%20I%20would%20like%20to%20order." target="_blank" rel="noopener"><svg><use href="#wa"/></svg>WhatsApp</a>
+</div>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+var burger = document.getElementById('burger'), menu = document.getElementById('menu');
+burger.addEventListener('click', function(){
+  var open = menu.classList.toggle('open');
+  burger.setAttribute('aria-expanded', open);
+});
+menu.addEventListener('click', function(e){
+  if (e.target.tagName === 'A') { menu.classList.remove('open'); burger.setAttribute('aria-expanded','false'); }
+});
+document.querySelectorAll('.flip').forEach(function(card){
+  card.querySelectorAll('.flipbtn').forEach(function(btn){
+    btn.addEventListener('click', function(){ card.classList.toggle('on'); });
+  });
+});
+</script>
+</body>
+</html>
